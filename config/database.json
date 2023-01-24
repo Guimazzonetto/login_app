@@ -1,0 +1,4 @@
+{
+  "mongoHost": "mongodb://localhost:27017/",
+  "db": "Node_projects"
+}
