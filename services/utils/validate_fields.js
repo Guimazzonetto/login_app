@@ -1,6 +1,6 @@
 const validator = require("validator");
 
-module.exports = (payload) => {
+module.exports = async (payload) => {
   if (Object.keys(payload).length !== 0) {
     if (payload.email && payload.password && typeof payload.email == "string" && typeof payload.password == "string"){
       if (validator.isEmail(payload.email)) {

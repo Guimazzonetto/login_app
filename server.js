@@ -13,5 +13,5 @@ mongoose.connect(`${database.mongoHost}${database.db}`, () => {
   app.listen(apiConfig.port, console.log(`Listening port ${apiConfig.port}.`));
   app.use(express.json());
   app.use(`${apiConfig.version}/register`, register);
-  // app.use(`${apiConfig.version}/login`, login);
+  app.use(`${apiConfig.version}/login`, login);
 }, error => console.log(`Error while connecting in database: ${error}`));
